@@ -1,0 +1,65 @@
+
+.glowBanner{
+    stroke: #06ffa4;
+    stroke-width: 20px;
+    position: absolute;
+    transform-origin: center;
+    transform: rotate(3deg);
+    background-color:#06FF0F;
+    box-shadow: 0 0 5px 2px #4b7502;
+    max-height: 30px;
+    
+    
+}
+.moveText{
+     animation: scroll-left 5s linear infinite;
+     animation-fill-mode: forwards;
+     animation-direction: reverse;
+     white-space: nowrap;
+     
+    color:#fff;
+    font-family:Nippo-Bold;
+    overflow: visible;
+    max-width: 100%;
+    
+}
+@keyframes scroll-left {
+ 100%   {
+ transform: translateX(100%); 	
+ }
+  100% {
+ transform: translateX(-100%); 
+ }
+}
+/* OPPOSITE DIR */
+.glowBanner2{
+    stroke: #06ffa4;
+    stroke-width: 20px;
+    position: absolute;
+    transform-origin: center;
+    transform: rotate(-3deg);
+    background-color:#06FF0F;
+    box-shadow: 0 0 5px 2px #4b7502;
+    max-height: 30px;
+    
+    
+}
+.moveText2{
+     animation: scroll-right 5s linear infinite;
+     animation-fill-mode: forwards;
+     white-space: nowrap;
+     
+    color:white;
+    font-family:Nippo-Bold;
+    overflow: visible;
+    max-width: 100%;
+    
+}
+@keyframes scroll-right {
+ 100%   {
+ transform: translateX(100%); 	
+ }
+  100% {
+ transform: translateX(-100%); 
+ }
+}
